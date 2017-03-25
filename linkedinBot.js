@@ -1,4 +1,4 @@
-var countOfPagesScrolled = 1;
+var countOfPagesScrolled = 5;
 
 function scrollDown(height, countOfPagesScrolled){
 	scroll(0, document.body.clientHeight);
