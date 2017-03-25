@@ -1,26 +1,17 @@
-# Attention
-
-This script is no longer supported or developed.
-
-He became part of the browser extension and use in [Linkedin Boost](https://github.com/Kravalg/linkedin-boost).
-
-Linkedin Boost - chrome extension helps easy to add new contacts in the social network LinkedIn.
-
 
 # linkedin-bot
-JS script for automatic invitations to add to the network of contacts.
+This is forked from another project called 'linkedin-bot' which was a JS script for automatic invitations to add to the network of contacts. I have modified it for my needs to connect and log the information I need for our CRM to log our touchpoints. 
 
 # How to use?
-* Go to this page, previously entered into [linkedIn](https://www.linkedin.com/people/pymk/hub)
-* Press the following key combination:
+* Go to your network on [linkedIn](https://www.linkedin.com/mynetwork/)
+* Press the following key combination (Console) :
 Ctrl + Shift + I
-* Insert the console javascript code available on this page [github/linkedinBot](https://github.com/Kravalg/linkedin-bot/blob/master/linkedinBot.js)
-
+* Insert the console javascript code available on this page [github/xingh/linkedinBot](https://github.com/xingh/linkedin-bot/blob/master/linkedinBot.js)
 
 # Settings
 * countOfPagesScrolled - responsible for the number of pages that the script will scroll. The default is 5 pages. You can change the number 5 to any other.
 
-
-
 #Notice:
 Maximum number of contacts - 3000
+
+This script is maintained by [Rahul Xavier Singh](https://linkedin.com/in/xingh) of [Anant Corporation](https://www.anant.us/) and a contributor to the [Appleseed Framework](https://github.com/appleseed/)
