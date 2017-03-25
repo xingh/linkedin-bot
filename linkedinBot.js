@@ -1,3 +1,4 @@
+//TODO : Change this to the number of pages to scroll. There are about 10-15 people per page. Don't go over board. 
 var countOfPagesScrolled = 5;
 
 function scrollDown(height, countOfPagesScrolled){
