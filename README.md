@@ -5,7 +5,7 @@ This is forked from another project called 'linkedin-bot' which was a JS script 
 # How to use?
 * Go to your network on [linkedIn](https://www.linkedin.com/mynetwork/)
 * Press the following key combination (Console) :
-Ctrl + Shift + I
+Ctrl + Shift + I  (You can also go to this [Stackexchange Post on How to Open the JavaScript Console in Different Browsers](http://webmasters.stackexchange.com/questions/8525/how-to-open-the-javascript-console-in-different-browsers)
 * Insert the console javascript code available on this page [github/xingh/linkedinBot](https://github.com/xingh/linkedin-bot/blob/master/linkedinBot.js)
 
 # Settings
