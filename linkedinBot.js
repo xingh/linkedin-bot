@@ -18,12 +18,16 @@ function sendOrAcceptRequest(){
 	jQuery.each( $('li.mn-person-card'), 	function() {
 		contactsNum++;
 
-		var identity_full_name = $(this).find('a.mn-person-info__link span.mn-person-info__name').text().trim();
-		var identity_occupation = $(this).find('a.mn-person-info__link span.mn-person-info__occupation').text().trim();
-		var identity_occupation_split = identity_occupation.split(' at '); 
-		var identity_occupation_title = identity_occupation_split[0];
-		var identity_occupation_company = identity_occupation_split[1];
-		var identity_social_lin = 'https://linkedin.com'+$(this).find('a.mn-person-info__link').attr('href');
+		var identity_owner        = "TeamMember";
+		var identity_contact_type = "Network"; //default for now until we do some ML 
+		var identity_touch_type   = "Social";
+		var identity_touch        = "New";
+		var identity_full_name    = $(this).find('a.mn-person-info__link span.mn-person-info__name').text().trim();
+		var identity_job          = $(this).find('a.mn-person-info__link span.mn-person-info__occupation').text().trim();
+		var identity_job_split    = identity_job.split(' at '); 
+		var identity_job_title    = identity_job[0];
+		var identity_job_company  = identity_job[1];
+		var identity_social_lin   = 'https://linkedin.com'+$(this).find('a.mn-person-info__link').attr('href');
 		
 		// IMPORTANT - do not modify this timeout function otherwise your connections will fail. Linkedin's ajax functions won't respect all incoming requests.
 		//setTimeout(function(){
@@ -32,7 +36,7 @@ function sendOrAcceptRequest(){
 			console.log('Connected with :'+identity_full_name);
 		//}, 1000);
 		
-		console.log(contactsNum+',"'+identity_full_name+'","'+identity_occupation_title+'","'+identity_occupation_company+'","'+identity_social_lin+'"');
+		console.log(contactsNum+',"'+identity_owner+'","'+',"'+identity_contact_type+'","'+',"'+identity_job_title+'","'+identity_job_company+'","'+identity_full_name+'","'+identity_touch_type+'","'+identity_touch+'","'+identity_social_lin+'"');
 	});
 	console.log('Just added contacts: ' + contactsNum);
 }
