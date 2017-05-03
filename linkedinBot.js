@@ -32,7 +32,7 @@ function sendOrAcceptRequest(){
 		// IMPORTANT - do not modify this timeout function otherwise your connections will fail. Linkedin's ajax functions won't respect all incoming requests.
 		//setTimeout(function(){
 			//IMPORTANT - UNCOMMENT THIS LINE IF YOU WANT TO CONNECT PEOPLE. I DONT TURN THIS ON BY DEFAULT BECAUSE IT SHOULD BE USED CAREFULLY
-			$(this).find('div.mn-person-card__card-actions button.mn-person-card__person-btn-ext.button-secondary-medium').click();
+			//$(this).find('div.mn-person-card__card-actions button.mn-person-card__person-btn-ext.button-secondary-medium').click();
 			console.log('Connected with :'+identity_full_name);
 		//}, 1000);
 		
