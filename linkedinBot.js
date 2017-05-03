@@ -36,7 +36,7 @@ function sendOrAcceptRequest(){
 			console.log('Connected with :'+identity_full_name);
 		//}, 1000);
 		
-		console.log(contactsNum+',"'+identity_owner+'","'+',"'+identity_contact_type+'","'+',"'+identity_job_title+'","'+identity_job_company+'","'+identity_full_name+'","'+identity_touch_type+'","'+identity_touch+'","'+identity_social_lin+'"');
+		console.log(contactsNum+',"'+identity_owner+'","'+identity_contact_type+'","'+identity_job_title+'","'+identity_job_company+'","'+identity_full_name+'","'+identity_touch_type+'","'+identity_touch+'","'+identity_social_lin+'"');
 	});
 	console.log('Just added contacts: ' + contactsNum);
 }
