@@ -1,6 +1,6 @@
 
-# linkedin-bot
-This is forked from another project called 'linkedin-bot' which was a JS script for automatic invitations to add to the network of contacts. I have modified it for my needs to connect and log the information I need for our CRM to log our touchpoints. 
+# linkedin-bot / social bots
+This is forked from another project called 'linkedin-bot' which was a JS script for automatic invitations to add to the network of contacts. I have modified it for my needs to connect and log the information I need for our CRM to log our touchpoints. I have also recently added one to log who came to our meetups. 
 
 # How to use?
 * Go to your network on [linkedIn](https://www.linkedin.com/mynetwork/)
