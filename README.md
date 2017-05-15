@@ -11,7 +11,7 @@ Ctrl + Shift + I  (You can also go to this [Stackexchange Post on How to Open th
 # Settings
 * countOfPagesScrolled - responsible for the number of pages that the script will scroll. The default is 5 pages. You can change the number 5 to any other.
 
-#Notice:
+# Notice:
 Maximum number of contacts - 3000
 
 This script is maintained by [Rahul Xavier Singh](https://linkedin.com/in/xingh) of [Anant Corporation](https://www.anant.us/) and a contributor to the [Appleseed Framework](https://github.com/appleseed/)
