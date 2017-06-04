@@ -1,5 +1,7 @@
 //TODO : Change this to the number of pages to scroll. There are about 10-15 people per page. Don't go over board. 
-var countOfPagesScrolled = 3;
+var countOfPagesScrolled = 0;
+
+
 
 function scrollDown(height, countOfPagesScrolled){
 	scroll(0, document.body.clientHeight);
@@ -15,10 +17,12 @@ function scrollDown(height, countOfPagesScrolled){
 // Execute this (commented) if on Invitation Manager : https://www.linkedin.com/mynetwork/invitation-manager/
 function sendOrAcceptRequest(){
 	var contactsNum = 0;
-	jQuery.each( $('li.mn-person-card'), 	function() {
+	var list_selector = 'li.mn-pymk-list__card';
+	
+	jQuery.each( $(list_selector), 	function() {
 		contactsNum++;
 
-		var identity_owner        = "TeamMember";
+		var identity_owner        = "TeamMember"; 
 		var identity_contact_type = "Network"; //default for now until we do some ML 
 		var identity_touch_type   = "Social";
 		var identity_touch        = "New";
@@ -32,7 +36,9 @@ function sendOrAcceptRequest(){
 		// IMPORTANT - do not modify this timeout function otherwise your connections will fail. Linkedin's ajax functions won't respect all incoming requests.
 		setTimeout(function(){
 			//IMPORTANT - UNCOMMENT THIS LINE IF YOU WANT TO CONNECT PEOPLE. I DONT TURN THIS ON BY DEFAULT BECAUSE IT SHOULD BE USED CAREFULLY
-			//$(this).find('div.mn-person-card__card-actions button.mn-person-card__person-btn-ext.button-secondary-medium').click();
+			var card_selector = 'div.mn-pymk-list__action-container button.button-secondary-small';
+			$(this).find(card_selector).css("background-color","yellow");
+			//$(this).find(card_selector).click();
 			console.log('Connected with :'+identity_full_name);
 		}, 1000);
 		
