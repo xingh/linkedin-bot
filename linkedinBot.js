@@ -1,8 +1,6 @@
 //TODO : Change this to the number of pages to scroll. There are about 10-15 people per page. Don't go over board. 
 var countOfPagesScrolled = 0;
 
-
-
 function scrollDown(height, countOfPagesScrolled){
 	scroll(0, document.body.clientHeight);
 	setTimeout(function(){
@@ -47,5 +45,7 @@ function sendOrAcceptRequest(){
 	console.log('Just added contacts: ' + contactsNum);
 }
 
-
 scrollDown(document.body.clientHeight, countOfPagesScrolled);
+
+//TODO: get this to work with the new accept invites 
+//TODO: get this to work with the new connect / make invite
